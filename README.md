@@ -772,40 +772,40 @@ function sex()
         autoloadtab:Label("⚠️ If it doesnt work properly then put the script in Autoexec\nfolder!!! ⚠️")
 
 --#region Auto Farm Tab
-        autofarmtab:Toggle("//ออโต้เริ่มใหม่\\", getgenv().AutoReplay, function(bool)
+        autofarmtab:Toggle("ออโต้เริ่มใหม่", getgenv().AutoReplay, function(bool)
             getgenv().AutoReplay = bool
             updatejson()
         end)
-        autofarmtab:Toggle("//ออกอัตโนมัติ\\", getgenv().AutoLeave, function(bool)
+        autofarmtab:Toggle("ออกอัตโนมัติ", getgenv().AutoLeave, function(bool)
             getgenv().AutoLeave = bool
             updatejson()
         end)
-        autofarmtab:Toggle("//ออโต้ทำอีเว้น\\", getgenv().AutoFarmTP, function(bool)
+        autofarmtab:Toggle("ออโต้ทำอีเว้น", getgenv().AutoFarmTP, function(bool)
             getgenv().AutoFarmTP = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("//ออโต้infปราสาทน้ำแข็ง\\", getgenv().AutoFarmIC, function(bool)
+        autofarmtab:Toggle("ออโต้infปราสาทน้ำแข็ง", getgenv().AutoFarmIC, function(bool)
             getgenv().AutoFarmIC = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("//Aออโต้ฟาม\\", getgenv().AutoFarm, function(bool)
+        autofarmtab:Toggle("Aออโต้ฟาม", getgenv().AutoFarm, function(bool)
             getgenv().AutoFarm = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("//ออโต้สกิล\\", getgenv().autoabilities, function(bool)
+        autofarmtab:Toggle("//ออโต้สกิล", getgenv().autoabilities, function(bool)
             getgenv().autoabilities = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("//เริ่มอัตโนมัติ\\", getgenv().autostart, function(bool)
+        autofarmtab:Toggle("เริ่มอัตโนมัติ\\", getgenv().autostart, function(bool)
             getgenv().autostart = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("//ออโต้อัพUnit\\", getgenv().autoupgrade, function(bool)
+        autofarmtab:Toggle("ออโต้อัพUnit", getgenv().autoupgrade, function(bool)
             getgenv().autoupgrade = bool
             updatejson()
         end)

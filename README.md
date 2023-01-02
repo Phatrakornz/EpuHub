@@ -1,5 +1,3 @@
-local versionx = "1.6.4"
-
 ---// Loading Section \\---
 task.wait(2)
 repeat  task.wait() until game:IsLoaded()

@@ -500,30 +500,30 @@ function sex()
 ------------------ Auto Farm Tab -----------------
 --------------------------------------------------
 --#region Auto Farm Tab
-        autofarmtab:Toggle("🎮เริ่มใหม่อัตโนมัติ🎮", getgenv().AutoReplay, function(bool)
+        autofarmtab:Toggle("🎮//เริ่มใหม่อัตโนมัติ\\🎮", getgenv().AutoReplay, function(bool)
             getgenv().AutoReplay = bool
             updatejson()
         end)
-        autofarmtab:Toggle("🛺ออกอัตโนมัติ🛺", getgenv().AutoLeave, function(bool)
+        autofarmtab:Toggle("🛺//ออกอัตโนมัติ\\🛺", getgenv().AutoLeave, function(bool)
             getgenv().AutoLeave = bool
             updatejson()
         end)
-        autofarmtab:Toggle("⭐ออโต้อีเว้น⭐", getgenv().AutoFarmTP, function(bool)
+        autofarmtab:Toggle("⭐//ออโต้อีเว้น\\⭐", getgenv().AutoFarmTP, function(bool)
             getgenv().AutoFarmTP = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("🥰ออโต้ ปราสาทน้ำแข็ง🥰", getgenv().AutoFarmIC, function(bool)
+        autofarmtab:Toggle("🥰//ออโต้ ปราสาทน้ำแข็ง\\🥰", getgenv().AutoFarmIC, function(bool)
             getgenv().AutoFarmIC = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("⚡ออโต้ฟาม⚡", getgenv().AutoFarm, function(bool)
+        autofarmtab:Toggle("_//ออโต้ฟาม\\_", getgenv().AutoFarm, function(bool)
             getgenv().AutoFarm = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("🟢เริ่มอัตโนมัติ🟢", getgenv().autostart, function(bool)
+        autofarmtab:Toggle("//เริ่มอัตโนมัติ\\", getgenv().autostart, function(bool)
             getgenv().autostart = bool
             updatejson()
 
@@ -574,17 +574,17 @@ function sex()
 
         end)
 
-        autofarmtab:Toggle("🥰สกิลอัตโนมัติ🥰", getgenv().autoabilities, function(bool)
+        autofarmtab:Toggle("🥰//สกิลอัตโนมัติ\\🥰", getgenv().autoabilities, function(bool)
             getgenv().autoabilities = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("🪙อัพเกรดunitอัตโนมัติ🪙", getgenv().autoupgrade, function(bool)
+        autofarmtab:Toggle("🪙//อัพเกรดunitอัตโนมัติ\\🪙", getgenv().autoupgrade, function(bool)
             getgenv().autoupgrade = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("⚡ขายunitที่wave⚡", getgenv().autosell, function(x)
+        autofarmtab:Toggle("ขายunitที่wave", getgenv().autosell, function(x)
             getgenv().autosell = x
             updatejson()
             if getgenv().autosell == false then
@@ -593,7 +593,7 @@ function sex()
         end)
 
         ---- 
-        autofarmtab:Textbox("💀ขายUnitที่wave💀 {Press Enter}", tostring(getgenv().sellatwave), false, function(t)
+        autofarmtab:Textbox("ขายunitที่wave {Press Enter}", tostring(getgenv().sellatwave), false, function(t)
             getgenv().sellatwave = tonumber(t)
             updatejson()
         end)
@@ -602,13 +602,13 @@ function sex()
 		autoloadtab:Label("สคริปจะโหลดตอนเข้าในด่าน")
         autoloadtab:Label("ไม่ต้องใส่สคริปในautoexecในตัวรัน")
         autoloadtab:Toggle("โหลดสคริปอัตโนมัติ", getgenv().AutoLoadTP, function(bool)
-            --queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Phatrakornz/EpuHub/main/README.md'))()")
+            --queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
             getgenv().AutoLoadTP = bool
             updatejson()
             if exec == "Synapse X" and getgenv().AutoLoadTP then
-                syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Phatrakornz/EpuHub/main/README.md'))()")
+                syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
             elseif exec ~= "Synapse X" and getgenv().AutoLoadTP then
-                queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Phatrakornz/EpuHub/main/README.md'))()")
+                queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
             end
 
         end)
@@ -763,49 +763,49 @@ function sex()
             getgenv().AutoLoadTP = bool
             updatejson()
             if exec == "Synapse X" and getgenv().AutoLoadTP then
-                syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Phatrakornz/EpuHub/main/README.md'))()")
+                syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
             elseif exec ~= "Synapse X" and getgenv().AutoLoadTP then
-                queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Phatrakornz/EpuHub/main/README.md'))()")
+                queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
             end
 
         end)
         autoloadtab:Label("⚠️ If it doesnt work properly then put the script in Autoexec\nfolder!!! ⚠️")
 
 --#region Auto Farm Tab
-        autofarmtab:Toggle("ออโต้เริ่มใหม่", getgenv().AutoReplay, function(bool)
+        autofarmtab:Toggle("//ออโต้เริ่มใหม่\\", getgenv().AutoReplay, function(bool)
             getgenv().AutoReplay = bool
             updatejson()
         end)
-        autofarmtab:Toggle("ออกอัตโนมัติ", getgenv().AutoLeave, function(bool)
+        autofarmtab:Toggle("//ออกอัตโนมัติ\\", getgenv().AutoLeave, function(bool)
             getgenv().AutoLeave = bool
             updatejson()
         end)
-        autofarmtab:Toggle("ออโต้ทำอีเว้น", getgenv().AutoFarmTP, function(bool)
+        autofarmtab:Toggle("//ออโต้ทำอีเว้น\\", getgenv().AutoFarmTP, function(bool)
             getgenv().AutoFarmTP = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("ออโต้infปราสาทน้ำแข็ง", getgenv().AutoFarmIC, function(bool)
+        autofarmtab:Toggle("//ออโต้infปราสาทน้ำแข็ง\\", getgenv().AutoFarmIC, function(bool)
             getgenv().AutoFarmIC = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("Aออโต้ฟาม", getgenv().AutoFarm, function(bool)
+        autofarmtab:Toggle("//Aออโต้ฟาม\\", getgenv().AutoFarm, function(bool)
             getgenv().AutoFarm = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("//ออโต้สกิล", getgenv().autoabilities, function(bool)
+        autofarmtab:Toggle("//ออโต้สกิล\\", getgenv().autoabilities, function(bool)
             getgenv().autoabilities = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("เริ่มอัตโนมัติ\\", getgenv().autostart, function(bool)
+        autofarmtab:Toggle("//เริ่มอัตโนมัติ\\", getgenv().autostart, function(bool)
             getgenv().autostart = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("ออโต้อัพUnit", getgenv().autoupgrade, function(bool)
+        autofarmtab:Toggle("//ออโต้อัพUnit\\", getgenv().autoupgrade, function(bool)
             getgenv().autoupgrade = bool
             updatejson()
         end)
@@ -2771,9 +2771,9 @@ if getgenv().AutoLoadTP == true then
     local exec = tostring(identifyexecutor())
 
     if exec == "Synapse X" then
-        syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Phatrakornz/EpuHub/main/README.md'))()")
+        syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
     else
-        queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Phatrakornz/EpuHub/main/README.md'))()")
+        queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
     end
 
 end

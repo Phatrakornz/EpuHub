@@ -214,10 +214,10 @@ function sex()
 
     if game.PlaceId == 8304191830 then
 
-        local unitselecttab = autofrmserver:Channel("👷 เลือกยูนิต")
-        local slectworld = autofrmserver:Channel("🌎 เลือกด่าน")
-        local autofarmtab = autofrmserver:Channel("🤖 Auto Farm")
-        local autoclngtab = autofrmserver:Channel("🎯 Auto Challenge")
+        local unitselecttab = autofrmserver:Channel("🏍️Select Units")
+        local slectworld = autofrmserver:Channel("🏍️Select Map")
+        local autofarmtab = autofrmserver:Channel("🏍️Auto Farm")
+        local autoclngtab = autofrmserver:Channel("🏍️Auto Challenge")
     
 
 --------------------------------------------------
@@ -500,30 +500,30 @@ function sex()
 ------------------ Auto Farm Tab -----------------
 --------------------------------------------------
 --#region Auto Farm Tab
-        autofarmtab:Toggle("Auto Replay", getgenv().AutoReplay, function(bool)
+        autofarmtab:Toggle("🎮//AutoReplay\\🎮", getgenv().AutoReplay, function(bool)
             getgenv().AutoReplay = bool
             updatejson()
         end)
-        autofarmtab:Toggle("Auto Leave", getgenv().AutoLeave, function(bool)
+        autofarmtab:Toggle("🛺//AutoLeave\\🛺", getgenv().AutoLeave, function(bool)
             getgenv().AutoLeave = bool
             updatejson()
         end)
-        autofarmtab:Toggle("Auto Farm Event ⭐⭐", getgenv().AutoFarmTP, function(bool)
+        autofarmtab:Toggle("⭐//AutoEvent\\⭐", getgenv().AutoFarmTP, function(bool)
             getgenv().AutoFarmTP = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("Auto Start Infinity Castle", getgenv().AutoFarmIC, function(bool)
+        autofarmtab:Toggle("🥰//Auto InfinityCastle\\🥰", getgenv().AutoFarmIC, function(bool)
             getgenv().AutoFarmIC = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("Auto Farm", getgenv().AutoFarm, function(bool)
+        autofarmtab:Toggle("_//AutoFarm\\_", getgenv().AutoFarm, function(bool)
             getgenv().AutoFarm = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("Auto Start", getgenv().autostart, function(bool)
+        autofarmtab:Toggle("//AutoStart\\", getgenv().autostart, function(bool)
             getgenv().autostart = bool
             updatejson()
 
@@ -593,13 +593,13 @@ function sex()
         end)
 
         ---- 
-        autofarmtab:Textbox("Select Wave Number for Auto Sell {Press Enter}", tostring(getgenv().sellatwave), false, function(t)
+        autofarmtab:Textbox("SelectWaveumberforAutoSell {Press Enter}", tostring(getgenv().sellatwave), false, function(t)
             getgenv().sellatwave = tonumber(t)
             updatejson()
         end)
         
-        local autoloadtab = autofrmserver:Channel("⌛ Auto Load Script")
-		autoloadtab:Label("This Automatically executes script when you teleport to man.")
+        local autoloadtab = autofrmserver:Channel("⌛ AutoLoad Script ⌛")
+		autoloadtab:Label("This Automatically executes script when you teleport.")
         autoloadtab:Label("You don't need to put the script in AutoExec folder!")
         autoloadtab:Toggle("Auto Load Script", getgenv().AutoLoadTP, function(bool)
             --queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
@@ -616,7 +616,7 @@ function sex()
 
         
 
-		local webhooktab = webhookserver:Channel("🌐 Webhook")
+		local webhooktab = webhookserver:Channel("⌛ Webhook ⌛")
 		webhooktab:Label("Webhook sends notification in discord everytime\nGame is Finished!")
 		
 		local webhoolPlaceholder
@@ -666,7 +666,7 @@ function sex()
         getgenv().autosummongeme = false
         getgenv().autosummongem10e = false
 
-        local misc = autofrmserver:Channel("💸 Auto Buy/Sell")
+        local misc = autofrmserver:Channel("💸 Auto Buy/Sell 💸")
 
 
         local function autobuyfunc(xx, item)
@@ -751,11 +751,11 @@ function sex()
 
 
 
-    local autofarmtab = autofrmserver:Channel("🤖 Auto Farm")
-    local autoclngtab = autofrmserver:Channel("🎯 Auto Challenge")
-    local autoloadtab = autofrmserver:Channel("⌛ Auto Load Script_")
-    local autoseltab = autofrmserver:Channel("💸 Auto Sell")
-    local webhooktab = webhookserver:Channel("🌐 Webhook")
+    local autofarmtab = autofrmserver:Channel("🤖 Auto Farm 🤖")
+    local autoclngtab = autofrmserver:Channel("🎯 Auto Challenge 🎯")
+    local autoloadtab = autofrmserver:Channel("⌛ Auto Load Script_ ⌛")
+    local autoseltab = autofrmserver:Channel("💸 Auto Sell 💸")
+    local webhooktab = webhookserver:Channel("🌐 Webhook 🌐")
     
 		autoloadtab:Label("This Automatically executes script when you teleport to man.")
         autoloadtab:Label("You don't need to put the script in AutoExec folder!")
@@ -1031,36 +1031,12 @@ end)
 --#endregion
 
 --#region changelog
-    local changelog = cngelogserver:Channel("💬 Changelog")
-    changelog:Label("-- 1.6.4 --")
-    changelog:Label("+ Added auto farm for the NEW EVENT!")
-    changelog:Label("+ Fixes JoJo world unit placing issue")
-    changelog:Label("-- 1.6.3 --")
-    changelog:Label("+ Added JoJo World")
-    changelog:Label("-- 1.6.2 --")
-    changelog:Label("+ Auto Leave makes u join the smallest server!")
-    changelog:Label("-- 1.6.1 --")
-    changelog:Label("+ Added Auto Replay")
-    changelog:Label("+ Fixed Hollow Stage")
-    changelog:Label("-- 1.6.0 --")
-    changelog:Label("+ Added Legend Stages - Hollow Invation")
-    changelog:Label("-- 1.5.9 --")
-    changelog:Label("+ Fixed Auto Farm not starting\n+ Added new default positions for units.")
-    changelog:Label("-- 1.5.8 --\n")
-    changelog:Label("+ Added Auto Challenge\n+ Added Auto Leave Toggle\n+ Better Auto Farming now\n+ Fixed some bugs\n")
-    changelog:Label("-- 1.5.7 -- ")
-    changelog:Label("+ Added Auto Buy for Special Banner")
-    changelog:Label("-- 1.5.6 -- ")
-    changelog:Label("+ Fixed not executing")
-    changelog:Label("-- 1.5.5 -- ")
-    changelog:Label("+ Added Clover Legend\n+ Fixed Auto Ability breaking randomly")
-    changelog:Label("-- v1.5.4 --")
-    changelog:Label("+ Added Clover Kingdom")
+    local changelog = cngelogserver:Channel("💬 Changelog 💬")
+    changelog:Label("1.6.4 EpuHub Started")
 --#endregion
 
     local credits = creditsserver:Channel("✨ Credits")
-    credits:Label("Arpon AG#6612")
-    credits:Label("Forever4D#0001")
+    credits:Label("ส้มตำโจ๊ะๆ#9999")
     credits:Label(" ")
 end
 

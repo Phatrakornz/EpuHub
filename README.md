@@ -39,7 +39,7 @@ local function webhook()
 		local data = {
 			["content"] = "",
 			["username"] = "อนิเมาะแอดเวนต์เจ้อออออ",
-			["avatar_url"] = "https://media.discordapp.net/attachments/1056945117354799126/1059458779487412294/received_528290485925930.jpg?width=396&height=605",
+			["avatar_url"] = "",
 			["embeds"] = {
 				{
 					["author"] = {

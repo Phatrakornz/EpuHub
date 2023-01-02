@@ -8,7 +8,7 @@ else
     repeat task.wait() until game.Workspace:FindFirstChild(game.Players.LocalPlayer.Name)
     game:GetService("ReplicatedStorage").endpoints.client_to_server.vote_start:InvokeServer()
     repeat task.wait() until game:GetService("Workspace")["_waves_started"].Value == true
-end
+end)
 ------------------------------
 local HttpService = game:GetService("HttpService")
 local Workspace = game:GetService("Workspace") 

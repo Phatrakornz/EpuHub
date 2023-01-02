@@ -500,30 +500,30 @@ function sex()
 ------------------ Auto Farm Tab -----------------
 --------------------------------------------------
 --#region Auto Farm Tab
-        autofarmtab:Toggle("🎮//เริ่มใหม่อัตโนมัติ\\🎮", getgenv().AutoReplay, function(bool)
+        autofarmtab:Toggle("🎮เริ่มใหม่อัตโนมัติ🎮", getgenv().AutoReplay, function(bool)
             getgenv().AutoReplay = bool
             updatejson()
         end)
-        autofarmtab:Toggle("🛺//ออกอัตโนมัติ\\🛺", getgenv().AutoLeave, function(bool)
+        autofarmtab:Toggle("🛺ออกอัตโนมัติ🛺", getgenv().AutoLeave, function(bool)
             getgenv().AutoLeave = bool
             updatejson()
         end)
-        autofarmtab:Toggle("⭐//ออโต้อีเว้น\\⭐", getgenv().AutoFarmTP, function(bool)
+        autofarmtab:Toggle("⭐ออโต้อีเว้น⭐", getgenv().AutoFarmTP, function(bool)
             getgenv().AutoFarmTP = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("🥰//ออโต้ ปราสาทน้ำแข็ง\\🥰", getgenv().AutoFarmIC, function(bool)
+        autofarmtab:Toggle("🥰ออโต้ ปราสาทน้ำแข็ง🥰", getgenv().AutoFarmIC, function(bool)
             getgenv().AutoFarmIC = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("_//ออโต้ฟาม\\_", getgenv().AutoFarm, function(bool)
+        autofarmtab:Toggle("⚡ออโต้ฟาม⚡", getgenv().AutoFarm, function(bool)
             getgenv().AutoFarm = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("//เริ่มอัตโนมัติ\\", getgenv().autostart, function(bool)
+        autofarmtab:Toggle("🟢เริ่มอัตโนมัติ🟢", getgenv().autostart, function(bool)
             getgenv().autostart = bool
             updatejson()
 
@@ -574,17 +574,17 @@ function sex()
 
         end)
 
-        autofarmtab:Toggle("🥰//สกิลอัตโนมัติ\\🥰", getgenv().autoabilities, function(bool)
+        autofarmtab:Toggle("🥰สกิลอัตโนมัติ🥰", getgenv().autoabilities, function(bool)
             getgenv().autoabilities = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("🪙//อัพเกรดunitอัตโนมัติ\\🪙", getgenv().autoupgrade, function(bool)
+        autofarmtab:Toggle("🪙อัพเกรดunitอัตโนมัติ🪙", getgenv().autoupgrade, function(bool)
             getgenv().autoupgrade = bool
             updatejson()
         end)
 
-        autofarmtab:Toggle("ขายunitที่wave", getgenv().autosell, function(x)
+        autofarmtab:Toggle("⚡ขายunitที่wave⚡", getgenv().autosell, function(x)
             getgenv().autosell = x
             updatejson()
             if getgenv().autosell == false then
@@ -593,7 +593,7 @@ function sex()
         end)
 
         ---- 
-        autofarmtab:Textbox("ขายunitที่wave {Press Enter}", tostring(getgenv().sellatwave), false, function(t)
+        autofarmtab:Textbox("💀ขายUnitที่wave💀 {Press Enter}", tostring(getgenv().sellatwave), false, function(t)
             getgenv().sellatwave = tonumber(t)
             updatejson()
         end)

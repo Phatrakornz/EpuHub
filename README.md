@@ -195,6 +195,7 @@ function sex()
         local gettrigonserver = win:Server("Get Trigon Evo!", "http://www.roblox.com/asset/?id=7628278821")
         local gettrigon = gettrigonserver:Channel("🎮Script ดีมากๆไอสัส🎮")
         gettrigon:Label("⚡Script ดีๆ จากลูกแม่ปุ๊⚡")
+        gettrigon:Label("http://www.roblox.com/asset/?id=12069933847")
         end)
     end
 

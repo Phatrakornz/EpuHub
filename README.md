@@ -186,7 +186,7 @@ function sex()
 
     local exec = tostring(identifyexecutor())
 
-    local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
+    local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Phatrakornz/Ui-Xenozz/main/README.md")()
     local win = DiscordLib:Window("🏍️Xenozz Hub Script - Anime Adventures🏍️"..versionx.." - "..exec)
        
     if exec == "Synapse X" or exec == "ScriptWare" or exec == "Trigon" then

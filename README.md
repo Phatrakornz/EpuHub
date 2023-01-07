@@ -40,12 +40,12 @@ local function webhook()
 
 		local data = {
 			["content"] = "",
-			["username"] = "Anime Adventure By Xenozz Hub",
-			["avatar_url"] = "https://cdn.discordapp.com/attachments/1056945117354799126/1060924843773665410/received_528290485925930.jpg",
+			["username"] = "Anime Adventures",
+			["avatar_url"] = "https://tr.rbxcdn.com/e5b5844fb26df605986b94d87384f5fb/150/150/Image/Jpeg",
 			["embeds"] = {
 				{
 					["author"] = {
-						["name"] = "Anime Adventures | บันทึกความสำเร็จ",
+						["name"] = "Anime Adventures | Result ✔",
 						["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
 					},
 					["description"] = "🎮 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🎮",
@@ -57,28 +57,28 @@ local function webhook()
 
 					["fields"] = {
 						{
-							["name"] = "Waveที่เล่นมาทั้งหมด:",
+							["name"] = "Total Waves:",
 							["value"] = tostring(waves[2]) ..
 								" <:wave:997136622363627530>",
 							["inline"] = true
 						}, {
-							["name"] = "Gemsที่ได้มาทั้งหมด:",
+							["name"] = "Recieved Gems:",
 							["value"] = gems .. " <:gem:997123585476927558>",
 							["inline"] = true
 						}, {
-                            ["name"] = "Xp ที่ได้มาทั้งหมด:",
+                            ["name"] = "Recieved XP:",
                             ["value"] = XP .. " 🧪",
                             ["inline"] = true
                         }, {
-                            ["name"] = "เวลา:",
+                            ["name"] = "Total Time:",
                             ["value"] = tostring(ttime[2]) .. " ⏳",
                             ["inline"] = true
                         }, {
-                            ["name"] = "Gemsที่มีอยู่ในตัว:",
+                            ["name"] = "Current Gems:",
                             ["value"] = tostring(game.Players.LocalPlayer._stats.gem_amount.Value).." <:gem:997123585476927558>",
                             ["inline"] = true
                         }, {
-                            ["name"] = "เลเวลตอนนี้:",
+                            ["name"] = "Current Level:",
                             ["value"] = tostring(game.Players.LocalPlayer.PlayerGui.spawn_units.Lives.Main.Desc.Level.Text).. " ✨",
                             ["inline"] = true
                         }
@@ -185,21 +185,26 @@ function sex()
     -- Uilib Shits
 
     local exec = tostring(identifyexecutor())
-   
-    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Phatrakornz/EpuHub/main/README.md"))()
-    local win = DiscordLib:Window("Xenozz Hub By LookEpu script - Anime Adventure"..versionx.." - ")
+
+    local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
+    local win = DiscordLib:Window("🏍️Xenozz Hub Script - Anime Adventures🏍️"..versionx.." - "..exec)
        
     if exec == "Synapse X" or exec == "ScriptWare" or exec == "Trigon" then
         print("Good boi")
     else
         local gettrigonserver = win:Server("Get Trigon Evo!", "http://www.roblox.com/asset/?id=7628278821")
-        local gettrigon = gettrigonserver:Channel("🎮Script ดีมากๆไอสัส🎮")
-        gettrigon:Label("⚡Script ดีๆ จากลูกแม่ปุ๊⚡")
-        gettrigon:Label("http://www.roblox.com/asset/?id=12069933847")
+        local gettrigon = gettrigonserver:Channel("📐 Get Trigon Evo!")
+        gettrigon:Label("⚠️ It looks like you're using "..exec..".💀⚠️")
+        gettrigon:Label("❗ You maybe wanna try out Trigon Evo, It could be better\nthen "..exec..". 🤮")
+        gettrigon:Label("gg", "http://www.roblox.com/asset/?id=12069933847")
+        gettrigon:Label("gg", "http://www.roblox.com/asset/?id=12069933847")
+        gettrigon:Button("👉 Copy Trigon Discord Link!", function()
+            setclipboard("https://discord.gg/rnZXbd2yfW")
+            DiscordLib:Notification("Copied!!", "✔ Trigon Evo's Discord Invite Link Has Been Copied To Your Clipboard!!", "Okay!")
         end)
     end
 
-    local autofrmserver = win:Server("Auto Farm Section", "http://www.roblox.com/asset/?id=1206980212424")
+    local autofrmserver = win:Server("Auto Farm Section", "http://www.roblox.com/asset/?id=11579310982")
     local webhookserver = win:Server("Discord Wehhook  ", "http://www.roblox.com/asset/?id=11585480207")
     local cngelogserver = win:Server("Changelog        ", "http://www.roblox.com/asset/?id=11579189531")
     local creditsserver = win:Server("Credits          ", "http://www.roblox.com/asset/?id=11579371312")

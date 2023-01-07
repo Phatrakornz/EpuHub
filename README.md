@@ -216,7 +216,7 @@ function sex()
 
     if game.PlaceId == 8304191830 then
 
-        local unitselecttab = autofrmserver:Channel("👷 Select Units")
+        local unitselecttab = autofrmserver:Channel("👷 Select Unit")
         local slectworld = autofrmserver:Channel("🌎 Select World")
         local autofarmtab = autofrmserver:Channel("🤖 Auto Farm")
         local autoclngtab = autofrmserver:Channel("🎯 Auto Challenge")

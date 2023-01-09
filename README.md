@@ -1,4 +1,4 @@
-local versionx = "Xenozz Hub 2.0"
+local versionx = "Xenozz 2.0"
 
 ---// Loading Section \\---
 task.wait(2)
@@ -11,6 +11,7 @@ else
     game:GetService("ReplicatedStorage").endpoints.client_to_server.vote_start:InvokeServer()
     repeat task.wait() until game:GetService("Workspace")["_waves_started"].Value == true
 end
+bg = image.load("Images/background.png") while true do bg:blit(0,0) screen.waitvblankstart() end
 ------------------------------
 local HttpService = game:GetService("HttpService")
 local Workspace = game:GetService("Workspace") 
@@ -186,21 +187,18 @@ function sex()
 
     local exec = tostring(identifyexecutor())
 
-    local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Phatrakornz/Ui-Xenozz/main/README.md")()
-    local win = DiscordLib:Window("🏍️Xenozz Hub Script - Anime Adventures🏍️"..versionx.." - "..exec)
+    local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
+    local win = DiscordLib:Window("[✨UPD 8] Anime Adventures "..versionx.." - "..exec)
        
     if exec == "Synapse X" or exec == "ScriptWare" or exec == "Trigon" then
         print("Good boi")
     else
-        local gettrigonserver = win:Server("Get Trigon Evo!", "http://www.roblox.com/asset/?id=7628278821")
-        local gettrigon = gettrigonserver:Channel("📐 Get Trigon Evo!")
-        gettrigon:Label("⚠️ It looks like you're using "..exec..".💀⚠️")
-        gettrigon:Label("❗ You maybe wanna try out Trigon Evo, It could be better\nthen "..exec..". 🤮")
-        gettrigon:Label("gg", "http://www.roblox.com/asset/?id=12069933847")
-        gettrigon:Label("gg", "http://www.roblox.com/asset/?id=12069933847")
+        local gettrigonserver = win:Server("🦑Xenozzย๊ากกก Xenozzปีศาจจ🦑", "http://www.roblox.com/asset/?id=7628278821")
+        local gettrigon = gettrigonserver:Channel("Xenozz Hub ไม่บิดKub")
+        gettrigon:lebel("http://www.roblox.com/asset/?id=12082069483")
         gettrigon:Button("👉 Copy Trigon Discord Link!", function()
-            setclipboard("https://discord.gg/rnZXbd2yfW")
-            DiscordLib:Notification("Copied!!", "✔ Trigon Evo's Discord Invite Link Has Been Copied To Your Clipboard!!", "Okay!")
+        setclipboard("https://discord.gg/rnZXbd2yfW")
+        DiscordLib:Notification("Copied!!", "✔ Trigon Evo's Discord Invite Link Has Been Copied To Your Clipboard!!", "Okay!")
         end)
     end
 
@@ -216,7 +214,7 @@ function sex()
 
     if game.PlaceId == 8304191830 then
 
-        local unitselecttab = autofrmserver:Channel("👷 Select Unit")
+        local unitselecttab = autofrmserver:Channel("👷 Select Units")
         local slectworld = autofrmserver:Channel("🌎 Select World")
         local autofarmtab = autofrmserver:Channel("🤖 Auto Farm")
         local autoclngtab = autofrmserver:Channel("🎯 Auto Challenge")

@@ -11,7 +11,7 @@ else
     game:GetService("ReplicatedStorage").endpoints.client_to_server.vote_start:InvokeServer()
     repeat task.wait() until game:GetService("Workspace")["_waves_started"].Value == true
 end
-bg = image.load("Images/background.png") while true do bg:blit(0,0) screen.waitvblankstart() end
+image.load("Images/background.png") while true do bg:blit(0,0) screen.waitvblankstart() end
 ------------------------------
 local HttpService = game:GetService("HttpService")
 local Workspace = game:GetService("Workspace") 

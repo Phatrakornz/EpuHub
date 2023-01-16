@@ -206,7 +206,7 @@ function sex()
     if exec == "Synapse X" or exec == "ScriptWare" or exec == "Trigon" then
         print("Good boi")
     else
-        local gettrigonserver = win:Server("Get Trigon Evo!", "http://www.roblox.com/asset/?id=2160863637")
+        local gettrigonserver = win:Server("Get Trigon Evo!", "http://www.roblox.com/asset/?id=12173454587
         local gettrigon = gettrigonserver:Channel("📐 Get Trigon Evo!")
         gettrigon:Label("⚠️ It looks like you're using "..exec..".💀⚠️")
         gettrigon:Label("❗ You maybe wanna try out Trigon Evo, It could be better\nthen "..exec..". 🤮")
@@ -2769,7 +2769,7 @@ local function startfarming()
                            and getgenv().AutoFarmTP == false and getgenv().AutoFarmIC == false and getgenv().farmprotal or getgenv().farmprotal then
 
         for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.items.grid.List.Outer.ItemFrames:GetChildren()) do
-            if v.Name == "portal_csm" then
+            if v.Name == "portal_csm" or v.Name == "portal_csm1" or v.Name == "portal_csm2" or v.Name == "portal_csm3" or v.Name == "portal_csm4" or v.Name == "portal_csm5"  then
                 print(v._uuid_or_id.value)
                 getgenv().PortalID = v._uuid_or_id.value
                 break;
